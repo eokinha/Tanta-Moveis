@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.destaque {
+    background-color: #004D66;
+    height: 500px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.destaque h1 {
+    color: #FFFFFF;
+}
+
+.cabecalho {
+    background-color: #004D66;
+    width: 100%;
+}
+
+.cabecalho h1 {
+    color: #ffffff;
+}
+
+.cabecalho .nav-link {
+    color: #FFFFFF;
+}
+
+.cabecalho .nav-link:hover {
+    color: #FFFFFF;
+}
+
+.cabecalho .nav-link:active {
+    color: #FFFFFF;
+}
+
+.cabecalho .nav-link:focus {
+    color: #FFFFFF;
+}
+
+.cabecalho .nav-link:visited {
+    color: #FFFFFF;
+}

@@ -7,34 +7,86 @@
   <title>Tanta Moveis</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="d-flex justify-content-center py-3">
+  <header class="d-flex justify-content-between py-2 px-5 cabecalho align-items-center">
+    <div>
+      <h1>Tanta Móveis</h1>
+    </div>
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
       <!-- <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li> -->
       <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
     </ul>
+    <div>
+      <button type="button" class="btn btn-primary">Registrar</button>
+      <button type="button" class="btn btn-primary" href="./pages/login.html">Login</button>
+    </div>
   </header>
-  <main>
-    <div class="px-4 py-5 my-5 text-center">
-      <h1 class="display-5 fw-bold text-body-emphasis">Tanta Móveis: O Seu Novo Lar Começa Aqui!</h1>
+  <main class="d-flex flex-column mt-5">
+    <div class="px-4 py-5 my-1 mx-4 text-center border rounded-3 destaque d-flex flex-column justify-content-center">
+      <h1 class="display-5 fw-bold">O Seu Novo Lar Começa Aqui!</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Móveis de qualidade com condições que cabem no seu bolso.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button"
-            class="btn btn-primary btn-lg px-4 gap-3">Confira o nosso catálogo</button> <button type="button"
-            class="btn btn-outline-secondary btn-lg px-4">Compre agora com crediário</button> </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="./pages/catalogo.html">Confira o nosso
+            catálogo</a>
+          <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="./pages/crediario.html">Compre agora
+            com crediário</a>
+        </div>
       </div>
     </div>
     <div class="album py-5 bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src="./assets/products/407747686_0addfb45-bbe7-4a8b-885d-a50bfa5369d6.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -48,8 +100,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -63,8 +116,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -78,8 +132,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -93,8 +148,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -108,8 +164,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -123,8 +180,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -138,8 +196,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid" height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -153,8 +212,9 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img class="card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg" alt="Mesa de centro">
+              <img class="card-img-top img-fluid " height="225" preserveAspectRatio="xMidYMid slice" role="img"
+                width="100%" src=".\assets\products\406618226_710e9cab-cdda-4bbd-9bc4-6aac4cdc52cb.jpg"
+                alt="Mesa de centro">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
